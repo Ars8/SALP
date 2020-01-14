@@ -105,8 +105,10 @@
   .works
     @include use_flex
     margin-top: 130px
-    margin-bottom: 171px
+    padding-bottom: 171px
     text-align: center
+    background: #FBFBFB
+    height: 1614px
     .row
       margin-top: 111px
     .cart_works
@@ -118,3 +120,101 @@
   .services
     @include use_flex
     text-align: center
+    margin-top: 143px
+    .tabs
+      height: 924px
+      margin-top: 135px
+      .photo
+        margin-top: 7px
+      .descr_title
+        width: 303px
+        height: 45.74px
+        font-size: 30px
+        line-height: 46px
+        color: #000000
+      .descr_text
+        width: 534px
+        height: 167px
+        font-size: 16px
+        line-height: 25px
+        color: #000000
+      button
+          @include bth_know_more
+          display: block
+          margin-top: 36px
+  .team
+    @include use_flex
+    text-align: center
+    height: 967px
+    background: #FBFBFB
+    padding-top: 145px
+    .slide_employee
+      margin-top: 125px
+    .descr_team
+      position: relative
+      width: 363px
+      height: 472px      
+      &_1
+        background: #FF5C36
+        box-shadow: 0px 0px 2px rgba(20, 20, 21, 0.6)
+      &_2
+        background: #FFF3F0
+        box-shadow: 0px 0px 49px rgba(20, 20, 21, 0.11)
+        .skill_box
+          padding-top: 171px
+      &_3
+        background: #FF5C36
+        box-shadow: 0px 0px 2px rgba(20, 20, 21, 0.6)
+      .name_profession
+        position: absolute
+        bottom: -24px
+        left: 50px
+        width: 265px
+        height: 98px
+        padding-top: 15px
+        background: #ffffff
+        box-shadow: 1px 5.9px 16px rgba(20, 20, 21, 0.08)
+        .name
+          display: inline
+          width: 196px
+          height: 45.74px
+          font-weight: 700
+          font-size: 30px
+          color: #000000
+  .review
+    @include use_flex
+    text-align: center
+    height: 1016px
+    background: #FFFFFF
+    padding-top: 136px
+    &_carousel
+      margin-top: 140px
+      padding: 88px 34px 112px 34px
+      width: 536.14px
+      height: 271px
+      background: #FFFFFF
+      box-shadow: 0px 0px 27px rgba(20, 20, 21, 0.09)
+    &_text
+      font-size: 17px
+      line-height: 27px
+      color: #000000
+    &_stars
+      margin-top: 24px
+      margin-left: 50%
+    &_points
+      display: block
+      margin-top: 51px
+  .pre_footer
+    height: 205px
+    background: #FBFBFB
+  .footer
+    height: 291px
+    background: #F7F7F7
+    text-align: center
+    button
+      @include bth_know_more
+      margin-top: 50px
+    .social_copyright
+      display: flex
+      justify-content: center
+      margin-top: 55px
