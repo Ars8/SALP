@@ -214,7 +214,25 @@
     button
       @include bth_know_more
       margin-top: 50px
-    .social_copyright
+    &_wrap
+      display: flex 
+      justify-content: space-between
+      align-items: flex-start
+      padding-top: 32px
+    &_wrap>div
+      width: 60%
+    &_social
+      width: 160px
       display: flex
-      justify-content: center
-      margin-top: 55px
+      justify-content: space-between
+      &_item 
+        display: flex 
+        justify-content: center
+        align-items: center
+        margin: 0 4px 
+        width: 55px
+        height: 55px
+        background-color: #070716
+        border-radius: 100%
+        i 
+          color: #fff
