@@ -1,0 +1,241 @@
+header
+    height: 930px
+    background-color: #f5f5f5
+.menu
+    display: none
+    justify-content: space-between
+    list-style-type: none
+.logo
+    padding-top: 92px
+    max-width: 100%
+.promo
+    height: 783px
+    @include use_flex      
+.promo_header
+    text-align: center
+    margin-top: 200px
+    height: 50px
+    opacity: 0.94
+    color: #626262
+    font-size: 50px
+    font-weight: 700
+span
+    color: $cart_color
+.promo_descr
+    text-align: center
+    margin-top: 26px
+    height: 67px
+    opacity: 0.65
+    color: #000000
+    font-size: 16px
+    font-weight: 300
+    line-height: 25px
+.process
+    height: 773px
+    text-align: center
+    padding-top: 144px
+    .label
+        display: block
+        height: 51px
+        font-size: 50px
+        font-weight: 400
+        color: #000000
+        span
+            color: #fc6744
+    .title
+        display: inline
+        height: 17px
+        color: #414141
+        font-weight: 400
+    .carts
+        display: flex
+        justify-content: space-between
+        margin-top: 104px
+        .cart
+            width: 262px
+            height: 263px
+            box-shadow: 0 0 35px rgba(20, 20, 21, 0.21)
+            &_img_1
+                background: #4EB2F7
+            &_img_2
+                background: #C049F8
+            &_img_3
+                background: #817EFF
+            &_img_4
+                background: #F74770
+            img
+                margin-top: 75px
+            .title_cart
+                margin-top: 15px
+                font-size: 20px
+                color: #FFFFFF
+                font-weight: 700
+            .text_cart
+                margin: 20px 40px 0 40px
+            button
+                @include btn_know_more
+                @include btn_hover
+                display: flex
+                justify-content: space-around
+                align-items: center
+                position: absolute
+            .cart_plus
+                display: flex
+                justify-content: center
+                align-items: center
+                position: relative
+                width: 25px
+                height: 25px
+                background-color: #FFF3F0
+                border-radius: 100%
+                &::before
+                    content: ''
+                    display: block
+                    width: 14px
+                    height: 2px
+                    background-color: #4EB2F7
+                    transition: 0.7s all
+                &::after
+                    content: ''
+                    position: absolute
+                    right: 45%
+                    transform: translateX(-8%)
+                    display: block
+                    width: 2px
+                    height: 14px
+                    background-color: #4EB2F7
+                    transition: 0.7s all
+                &:hover
+                    &::before, &::after
+                        background-color: #d30f0f
+.works
+    @include use_flex
+    margin-top: 130px
+    padding-bottom: 171px
+    text-align: center
+    background: #FBFBFB
+    height: 1614px
+    .row
+        margin-top: 111px
+        .cart_works
+            margin-top: 20px
+            height: 361px
+            background: #FF5C36
+.services
+    @include use_flex
+    text-align: center
+    margin-top: 143px
+    .tabs
+        height: 924px
+        margin-top: 135px
+        .photo
+            margin-top: 7px
+        .descr_title
+            width: 303px
+            height: 45.74px
+            font-size: 30px
+            line-height: 46px
+            color: #000000
+        .descr_text
+            width: 534px
+            height: 167px
+            font-size: 16px
+            line-height: 25px
+            color: #000000
+        button
+            @include btn_know_more
+            display: block
+            margin-top: 36px
+            @include btn_hover
+.team
+    @include use_flex
+    text-align: center
+    height: 967px
+    background: #FBFBFB
+    padding-top: 145px
+    .slide_employee
+        margin-top: 125px
+        .descr_team
+            position: relative
+            width: 363px
+            height: 472px      
+            &_1
+                background: #FF5C36
+                box-shadow: 0px 0px 2px rgba(20, 20, 21, 0.6)
+            &_2
+                background: #FFF3F0
+                box-shadow: 0px 0px 49px rgba(20, 20, 21, 0.11)
+                .skill_box
+                    padding-top: 171px
+            &_3
+                background: #FF5C36
+                box-shadow: 0px 0px 2px rgba(20, 20, 21, 0.6)
+            .name_profession
+                position: absolute
+                bottom: -24px
+                left: 50px
+                width: 265px
+                height: 98px
+                padding-top: 15px
+                background: #ffffff
+                box-shadow: 1px 5.9px 16px rgba(20, 20, 21, 0.08)
+                .name
+                    display: inline
+                    width: 196px
+                    height: 45.74px
+                    font-weight: 700
+                    font-size: 30px
+                    color: #000000
+.review
+    @include use_flex
+    text-align: center
+    height: 1016px
+    background: #FFFFFF
+    padding-top: 136px
+    &_carousel
+        margin-top: 140px
+        padding: 88px 34px 112px 34px
+        width: 536.14px
+        height: 271px
+        background: #FFFFFF
+        box-shadow: 0px 0px 27px rgba(20, 20, 21, 0.09)
+    &_text
+        font-size: 17px
+        line-height: 27px
+        color: #000000
+    &_stars
+        margin-top: 24px
+        margin-left: 50%
+    &_points
+        display: block
+        margin-top: 51px
+.pre_footer
+    height: 205px
+    background: #FBFBFB
+.footer
+    height: 291px
+    background: #F7F7F7
+    text-align: center
+    button
+        @include btn_know_more
+        margin-top: 50px
+        margin-bottom: 32px
+        @include btn_hover
+    &_wrap
+        display: flex 
+        justify-content: center
+        align-items: center
+    &_wrap_social
+        display: flex
+        justify-content: flex-end
+    &_wrap_social_item 
+        display: flex 
+        justify-content: center
+        align-items: center
+        margin: 0 4px 
+        width: 55px
+        height: 55px
+        background-color: #070716
+        border-radius: 100%
+        span 
+            color: #fff
